@@ -17,7 +17,7 @@ class PubSubManagerTest extends TestCase
     {
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn($this->getMockPubSubConfig());
 
@@ -52,7 +52,7 @@ class PubSubManagerTest extends TestCase
 
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn($this->getMockPubSubConfig());
 
@@ -76,7 +76,7 @@ class PubSubManagerTest extends TestCase
 
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn($this->getMockPubSubConfig());
 
@@ -97,7 +97,7 @@ class PubSubManagerTest extends TestCase
     {
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn($this->getMockPubSubConfig());
 
@@ -132,7 +132,7 @@ class PubSubManagerTest extends TestCase
     {
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn($this->getMockPubSubConfig());
 
@@ -172,7 +172,7 @@ class PubSubManagerTest extends TestCase
     {
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn($this->getMockPubSubConfig());
 
@@ -203,7 +203,7 @@ class PubSubManagerTest extends TestCase
     {
         $config = Mockery::mock(ConfigRepository::class);
         $config->shouldReceive('get')
-            ->with('laravel4-pubsub')
+            ->with('laravel4-pubsub::config')
             ->once()
             ->andReturn([
                 'default' => '/dev/null',

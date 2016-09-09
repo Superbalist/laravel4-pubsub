@@ -14,7 +14,8 @@ class PubSubServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('superbalist/laravel4-pubsub');
+        $dir = realpath(__DIR__ . '/../');
+        $this->package('superbalist/laravel4-pubsub', 'laravel4-pubsub', $dir);
     }
 
     /**

@@ -106,7 +106,7 @@ class PubSubManager
     protected function getConfig()
     {
         $config = $this->container->make('config'); /** @var \Illuminate\Config\Repository $config */
-        return $config->get('laravel4-pubsub');
+        return $config->get('laravel4-pubsub::config');
     }
 
     /**
