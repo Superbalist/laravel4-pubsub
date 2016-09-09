@@ -108,7 +108,7 @@ PubSub::connection('kafka')->subscribe('channel_name', function ($message) {
 A lot of pub-sub adapters will contain blocking `subscribe()` calls, so these commands are best run as daemons running
 as a [supervisor](http://supervisord.org) process.
 
-This generator command will create the file `app/Console/Commands/MyExampleSubscriber.php` which will contain:
+This is a sample subscriber written as an artisan command.
 ```php
 <?php
 
