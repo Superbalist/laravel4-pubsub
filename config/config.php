@@ -57,6 +57,8 @@ return [
             'driver' => 'gcloud',
             'project_id' => null,
             'key_file' => null,
+            'auto_create_topics' => true,
+            'auto_create_subscriptions' => true,
         ],
 
     ],
