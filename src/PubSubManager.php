@@ -42,6 +42,7 @@ class PubSubManager
      * Return a pub-sub adapter instance.
      *
      * @param string $name
+     *
      * @return PubSubAdapterInterface
      */
     public function connection($name = null)
@@ -61,6 +62,7 @@ class PubSubManager
      * Make an instance of a pub-sub adapter interface.
      *
      * @param string $name
+     *
      * @return PubSubAdapterInterface
      */
     protected function makeConnection($name)
@@ -84,6 +86,7 @@ class PubSubManager
      * Return the pubsub config for the given connection.
      *
      * @param string $name
+     *
      * @return array
      */
     protected function getConnectionConfig($name)
@@ -105,7 +108,7 @@ class PubSubManager
      */
     protected function getConfig()
     {
-        $config = $this->container->make('config'); /** @var \Illuminate\Config\Repository $config */
+        $config = $this->container->make('config'); /* @var \Illuminate\Config\Repository $config */
         return $config->get('laravel4-pubsub::config');
     }
 
@@ -126,7 +129,7 @@ class PubSubManager
      */
     public function setDefaultConnection($name)
     {
-        $config = $this->container->make('config'); /** @var \Illuminate\Config\Repository $config */
+        $config = $this->container->make('config'); /* @var \Illuminate\Config\Repository $config */
         $config->set('laravel4-pubsub::default', $name);
     }
 
@@ -166,6 +169,7 @@ class PubSubManager
      *
      * @param string $method
      * @param array $parameters
+     *
      * @return mixed
      */
     public function __call($method, $parameters)
