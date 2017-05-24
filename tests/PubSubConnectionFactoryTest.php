@@ -194,7 +194,7 @@ class PubSubConnectionFactoryTest extends TestCase
                 'driver' => '/dev/null',
             ],
         ];
-        $adapter = $factory->make('http', $config); /** @var HTTPPubSubAdapter $adapter */
+        $adapter = $factory->make('http', $config); /* @var HTTPPubSubAdapter $adapter */
         $this->assertInstanceOf(HTTPPubSubAdapter::class, $adapter);
         $this->assertEquals('http://127.0.0.1', $adapter->getUri());
         $this->assertInstanceOf(PubSubAdapterInterface::class, $adapter->getAdapter());
