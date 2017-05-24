@@ -19,6 +19,7 @@ The following adapters are supported:
 * Redis
 * Kafka (see separate installation instructions below)
 * Google Cloud
+* HTTP
 
 ## Installation
 

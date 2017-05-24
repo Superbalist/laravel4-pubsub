@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3 - ?
+
+* Add support for HTTP adapter
+
 ## 2.0.2 - 2017-05-16
 
 * Allow for superbalist/php-pubsub ^2.0
