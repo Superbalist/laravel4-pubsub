@@ -3,6 +3,7 @@
 namespace Superbalist\Laravel4PubSub;
 
 use Google\Cloud\PubSub\PubSubClient as GoogleCloudPubSubClient;
+use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 use Predis\Client as RedisClient;
 use Superbalist\PubSub\PubSubAdapterInterface;
@@ -69,6 +70,10 @@ class PubSubServiceProvider extends ServiceProvider
         $this->app->bind('pubsub.kafka.consumer', function ($app, $parameters) {
             return new \RdKafka\KafkaConsumer($parameters['conf']);
         });
+
+        $this->app->bind('pubsub.http.client', function () {
+            return new Client();
+        });
     }
 
     /**
@@ -87,6 +92,7 @@ class PubSubServiceProvider extends ServiceProvider
             'pubsub.kafka.topic_conf',
             'pubsub.kafka.producer',
             'pubsub.kafka.consumer',
+            'pubsub.http.client',
         ];
     }
 }
