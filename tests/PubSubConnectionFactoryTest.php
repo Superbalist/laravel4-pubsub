@@ -218,7 +218,7 @@ class PubSubConnectionFactoryTest extends TestCase
         $this->assertFalse($adapter->areTopicsAutoCreated());
         $this->assertTrue($adapter->areSubscriptionsAutoCreated());
         $this->assertTrue($adapter->isBackgroundBatchingEnabled());
-        $this->assertEquals('true',getenv('IS_BATCH_DAEMON_RUNNING'));
+        $this->assertEquals('true', getenv('IS_BATCH_DAEMON_RUNNING'));
     }
 
     public function testMakeGoogleCloudAdapterWithAuthCache()
