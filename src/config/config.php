@@ -62,6 +62,7 @@ return [
             'auth_cache' => null, // eg: \Google\Auth\Cache\MemoryCacheItemPool::class,
             'background_batching' => false,
             'background_daemon' => false,
+            'max_messages' => 1000,
         ],
 
         'http' => [
