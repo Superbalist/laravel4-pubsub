@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1 - 2018-07-27
+
+* Add max_messages options to Google Cloud adapter
+
 ## 3.0.0 - 2017-07-25
 
 * Bump up to superbalist/php-pubsub-google-cloud ^5.0 which allows for background daemon support
