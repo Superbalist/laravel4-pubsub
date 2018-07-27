@@ -2,7 +2,7 @@
 
 ## 3.0.1 - 2018-07-27
 
-* Add max_messages options to Google Cloud adapter
+* Add max_messages option to Google Cloud adapter
 
 ## 3.0.0 - 2017-07-25
 
