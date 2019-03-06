@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0 - 2019-03-06
+
+* Bump up to superbalist/php-pubsub-google-cloud ^5.1
+
 ## 3.0.1 - 2018-07-27
 
 * Add max_messages option to Google Cloud adapter
