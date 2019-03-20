@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.0 - 2019-03-20
+
+* Bump superbalist/php-pubsub-google-cloud ^5.2
+* Add config options for returnImmediately
+
 ## 3.1.0 - 2019-03-06
 
 * Bump up to superbalist/php-pubsub-google-cloud ^5.1

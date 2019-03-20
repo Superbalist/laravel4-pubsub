@@ -127,6 +127,8 @@ class PubSubConnectionFactory
         $backgroundBatching = array_get($config, 'background_batching', false);
         $backgroundDaemon = array_get($config, 'background_daemon', false);
         $maxMessages = array_get($config, 'max_messages', 1000);
+        $returnImmediately = array_get($config, 'return_immediately', null);
+        $returnImmediatelyPause = array_get($config, 'return_immediately_pause', null);
 
         if ($backgroundDaemon) {
             putenv('IS_BATCH_DAEMON_RUNNING=true');
@@ -138,7 +140,9 @@ class PubSubConnectionFactory
             $autoCreateTopics,
             $autoCreateSubscriptions,
             $backgroundBatching,
-            $maxMessages
+            $maxMessages,
+            $returnImmediately,
+            $returnImmediatelyPause
         );
     }
 

@@ -63,6 +63,8 @@ return [
             'background_batching' => false,
             'background_daemon' => false,
             'max_messages' => 1000,
+            'return_immediately' => false,
+            'return_immediately_pause' => 500000,
         ],
 
         'http' => [
